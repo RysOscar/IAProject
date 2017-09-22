@@ -1,0 +1,48 @@
+regla_texto
+    foreach
+        echos.type_txt($campo,$tipo)
+    assert
+        mostrar_txt.show_txt($campo,$tipo)
+regla_dato
+    foreach
+        echos.typedate($campo,$tipo)
+    assert
+        mostrar_date.show_date($campo,$tipo)
+
+regla_entero
+    foreach
+        echos.type_int($campo,$tipo)
+    assert
+        mostrar_int.show_int($campo,$tipo)
+
+rule_server
+    foreach
+        echos.servidor($campo,$tipo)
+    assert
+        mostrar_server.show_server($campo,$tipo)
+
+rule_user
+    foreach
+        echos.usuario($campo,$tipo)
+    assert
+        mostrar_user.show_user($campo,$tipo)
+
+
+rule_pass
+    foreach
+        echos.contasena($campo,$tipo)
+    assert
+        mostrar_pass.show_pass($campo,$tipo)
+
+rule_table
+    foreach
+        echos.tabla_bd($campo,$tipo)
+    assert
+        mostrar_table.show_table($campo,$tipo)
+
+rule_BD
+    foreach
+        echos.Basededatos($campo,$tipo)
+    assert
+        mostrar_bd.show_bd($campo,$tipo)
+
